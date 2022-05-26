@@ -1,5 +1,16 @@
 # Hydra
-Simple Persistent data structures for PHP
+**Simple persistent data structures for PHP**
+
+The aim is solve the common demand for many php web projects to have some kind of
+permanent state shared within an application which cannot be accomplished
+very well using session object (either because implies an all-or-nothing heavy object
+serialization or because the state is required to be shared between user session boundaries. 
+Also, state might be needed to persist throughout reboots.
+
+A usual approach to solve this problems is using a relational database but for rapid prototyping
+or small project it adds a big overhead going back and forth between queries and relational structure
+definitions. This library with some simple passive persistent data structures, all native, 
+might offer a more confortable solution.
 
 ##  Setting up the library
 ```php
