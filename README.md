@@ -14,25 +14,22 @@ Hydra\Functions::Load;
 
 ```
 
-## Using Matrix data structure
+## Using Maps
 ```php
-// initial matrix setup
+$m=(Hydra\hydra())->maps()->retrieveOrCreateHMap(999,"testMap");
+
+$m->set("w","hello");
+
+if ($m->hasKey("w")) echo $m->get("w");  // echoes hello
+```
+
+
+## Using Matrixes
+```php
 $m=(Hydra\hydra())->matrixes()->retrieveOrCreateHMatrix(1,"testMatrix",[10,20]);		
 
-for ($b=0;$b<10;$b++) {
-  for ($a=0;$a<10;$a++) {
-    $v=($a+$b)*1.01;
-    $m->set([$a,$b],$v);
-    printf("set %s,%s:%s<br>",$a,$b,$v );
-  }	
-}
-
-// reading matrix values (either stored or initially setup)
-for ($b=0;$b<10;$b++) {
-  for ($a=0;$a<20;$a++) {
-    printf("value %s,%s: %s<br>",$a,$b,$m->get([$a,$b])); 			
-  }
-}
+$m->set([5,10],33.3);
+$v=$m->get([5,10]); // 33.3
 ```
 
 ## Supported data structures
