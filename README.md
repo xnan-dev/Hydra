@@ -1,13 +1,22 @@
 # Hydra
 Simple Persistent data structures for PHP
+
+##  Setting up the library
 ```php
-// Uses: Hydra: Shortcuts
 use xnan\Trurl\Hydra;
 Hydra\Functions::Load;
 
 (Hydra\hydra())->hydrate();
 
-// initial setup matrix setup
+// create or update your data structures.
+
+(Hydra\hydra())->dehydrate(); // stores all new or changed structures.
+
+```
+
+## Using Matrix data structure
+```php
+// initial matrix setup
 $m=(Hydra\hydra())->matrixes()->retrieveOrCreateHMatrix(1,"testMatrix",[10,20]);		
 
 for ($b=0;$b<10;$b++) {
@@ -24,6 +33,4 @@ for ($b=0;$b<10;$b++) {
     printf("value %s,%s: %s<br>",$a,$b,$m->get([$a,$b])); 			
   }
 }
-
-(Hydra\hydra())->dehydrate(); // stores all changed structures.
 ```
