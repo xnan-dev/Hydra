@@ -44,11 +44,24 @@ $v=$m->get([5,10]); // 33.3
 ```
 
 ## Supported data structures
-1. Matrix
-2. Map
-3. Object references
 
-## Data structures storage:
+Currently,  these are the supported data structures:
+- Matrix
+- Map
+- Object references
+
+## Hydra properties
+- Passive library
+  - it does not require to setup any service or deamon, it runs only when called.
+- Simple object storage 
+  - object values assigned to persistent maps or references are stored by standard php serialization.
+ - Thread safe storage
+  - at storage time, objects are locked for exclusive write.
+ - No setup policy
+  - data structures are meant to adjust its properties according to usage, provide a reasonable default
+  setting is considered a must.
+  
+## Data structures storage
 
 All structures are stored in folder content/Hydra in php serialized form. 
 For Matrix structure, a more compact binary storage is used.
