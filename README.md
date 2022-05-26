@@ -56,9 +56,9 @@ Currently,  these are the supported data structures:
 - Simple object storage 
   - object values assigned to persistent maps or references are stored by standard php serialization.
  - Thread safe storage
-  - at storage time, objects are locked for exclusive write.
+    - at storage time, objects are locked for exclusive write.
  - No setup policy
-  - data structures are meant to adjust its properties according to usage, provide a reasonable default
+    - data structures are meant to adjust its properties according to usage, provide a reasonable default
   setting is considered a must.
   
 ## Data structures storage
