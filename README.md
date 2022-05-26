@@ -34,3 +34,13 @@ for ($b=0;$b<10;$b++) {
   }
 }
 ```
+
+## Supported data structures
+1. Matrix
+2. Map
+3. Object references
+
+## Data structures storage:
+
+All structures are stored in folder content/Hydra in php serialized form. 
+For Matrix structure, a more compact binary storage is used.
