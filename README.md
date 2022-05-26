@@ -1,5 +1,5 @@
 # Hydra
-**Simple persistent data structures for PHP**
+## Simple persistent data structures for small projects
 
 The aim is solve the common demand for many php web projects to have some kind of
 permanent state shared within an application which cannot be accomplished
