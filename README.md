@@ -12,6 +12,12 @@ or small project it adds a big overhead going back and forth between queries and
 definitions. This library with some simple passive persistent data structures, all native, 
 might offer a more confortable solution.
 
+## installing Hydra
+
+```
+composer require xnan/hydra
+```
+
 ##  Setting up the library
 ```php
 use xnan\Trurl\Hydra;
