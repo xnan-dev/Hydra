@@ -15,9 +15,10 @@
             "homepage": "https://xnan.click"
         }
     ],
-    "require": {
+    "require": {        
         "php": "^7.2.5 || ^8.0",
-        "ext-json": "*"
+        "ext-json": "*",
+        "xnan/nano": "0.9.*"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.5.5 || ^9.3.5"
