@@ -11,6 +11,7 @@ class Functions { const Load=1; }
 
 class Hydra {
 	static $instance=null;
+	static $settings=null;
 
 	function __construct() {		
 	}
@@ -59,6 +60,12 @@ class Hydra {
 		return "content/Hydra";
 	}
 
+	function settings($settings=null) {
+		if ($settings!=null) {
+			$this->settings=$settings;
+		}	
+		return $this->settings;	
+	}
 
 	function kill() {
 		HRefs\HRefs::instance()->kill();

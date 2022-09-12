@@ -1,0 +1,34 @@
+{
+    "name": "xnan/nano",
+    "description": "Common tools to bootstrap PHP projects easily",
+    "keywords": [
+        "php",
+        "snipets",
+        "botstrap"        
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hernán Rancati",
+            "email": "hernan.rancati@gmail.com",
+            "homepage": "https://xnan.click"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5 || ^8.0",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5.5 || ^9.3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hydra\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hydra\\Tests\\": "tests/"
+        }
+    }
+}
